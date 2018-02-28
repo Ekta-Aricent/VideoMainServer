@@ -15,7 +15,7 @@ print 'listening ...'
 while True:
     conn, addr = server.accept()
     print 'client connected ... ', addr
-    myfile = open('latest.mp4', 'w')
+    myfile = open('/opt/latest.mp4', 'w')
     
     while True:
         data = conn.recv(BUFSIZE)
